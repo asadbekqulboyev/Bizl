@@ -1,0 +1,36 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    &_right{
+        display: flex;
+        align-items: center;
+        gap: 54px;
+    }
+    &_menu{
+        display: flex;
+        align-items: center;
+        gap: 0 20px;
+        .submenu{
+            display: none;
+        }
+         a{
+            color: #000;
+            font-family: "Plus Jakarta Sans";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px; /* 130% */
+            text-transform: capitalize;
+            transition: .3s all ease;
+            display: flex;
+            align-items: center;
+            gap: 0 3px;
+            &:hover{
+                color: #FF0000;
+            }
+        }
+    }
+  }

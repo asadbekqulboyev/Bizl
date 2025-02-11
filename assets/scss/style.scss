@@ -1,0 +1,90 @@
+@import 'header';
+@import 'hero';
+@import 'plans';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.flex {
+    display: flex;
+
+    &.start {
+        justify-content: flex-start;
+    }
+
+    &.center {
+        justify-content: center;
+    }
+
+    &.between {
+        justify-content: space-between;
+    }
+
+    &.end {
+        justify-content: flex-end;
+    }
+
+    &.a_start {
+        align-items: flex-start;
+    }
+
+    &.a_center {
+        align-items: center;
+    }
+
+    &.a_end {
+        align-items: flex-end;
+    }
+
+    &.column {
+        flex-direction: column;
+    }
+
+    &.row {
+        flex-direction: row;
+    }
+
+    &.wrap {
+        flex-wrap: wrap;
+    }
+}
+a{
+    text-decoration: none;
+    transition: .3s all ease;
+}
+ul{
+    list-style: none;
+}
+body{
+    font-family: "Plus Jakarta Sans";
+    position: relative;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: #3A3A3A;
+}
+.wrapper{
+    width: 100%;
+    position: relative;
+}
+.container{
+    max-width: 1515px;
+    margin: 0 auto;
+}
+.get_btn{
+    border-radius: 4px;
+    background: #000;
+    padding: 5px 28px;
+    color: #FFF;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 28px; /* 116.667% */
+    text-transform: capitalize;
+    display: inline-block;
+    position: relative;
+  }
+  

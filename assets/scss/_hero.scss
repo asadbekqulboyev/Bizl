@@ -1,0 +1,79 @@
+.hero{
+  &_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../images/star_1.png'), url('../images/misc.png');
+    background-repeat: no-repeat;
+    background-position: -70px -15px, calc(100% + 26px) center;
+  }
+  &_content{
+    padding-left: 30px;
+  }
+  &_section {
+    h1{
+    color: #000;
+    font-family: "Plus Jakarta Sans";
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 64px; /* 100% */
+    text-transform: capitalize;
+    margin-bottom: 2px;
+    }
+    p{
+      color: #3A3A3A;
+      font-family: "Plus Jakarta Sans";
+      font-size: 16px;
+      font-style: italic;
+      font-weight: 800;
+      line-height: 33px; /* 206.25% */
+      text-transform: capitalize;
+      margin-bottom: 21px;
+    }
+    .get_btn{
+      margin-left: 11px;       
+      &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        left: calc(100% + 10px);
+        top: 30px;
+        width: 100px;
+        height: 55px;
+        background: url(../images/btn_tail1.png) no-repeat;
+        background-size: 100%;
+      }
+    }
+    .hero_images{
+      display: flex; 
+      position: relative;
+      width: 760px;
+      height: 820px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      img{
+        position: absolute;
+        &:first-child{
+          z-index: 10;
+          top: -25px;
+          left: -12px;
+        }
+        &:nth-child(2){
+          z-index: 11;
+        }
+        &:nth-child(3){
+          z-index: 10;
+          right: 5px;
+          top: -25px;
+         }
+        &:last-child{
+          z-index: 9;
+          bottom: -80px;
+          left: -75px;
+        }
+      }
+    }
+}
+}
