@@ -1,0 +1,36 @@
+.advantages {
+    .advantages_content{
+        padding-top: 22px;
+        max-width: 570px;
+        gap: 8px;
+        text-transform: capitalize;
+        .advantages_icon{
+            margin-top: 10px;
+        }
+        
+    }
+    .advantages_title {
+        color: #000;
+        font-family: "Plus Jakarta Sans";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+    .adv_btn{
+        margin-top: 38px;
+        padding-left: 85px;
+    }
+    .advantages_item{
+        &:first-child{
+           .adv_btn{
+            max-width: 570px;
+            img{
+            margin-top: 25px;
+            padding-right:5px ;
+            }
+           } 
+        }
+    }
+}
