@@ -1,6 +1,7 @@
 @import 'header';
 @import 'hero';
 @import 'plans';
+@import 'faq';
 *{
     padding: 0;
     margin: 0;
@@ -87,4 +88,25 @@ body{
     display: inline-block;
     position: relative;
   }
-  
+.section_title{
+color: #000;
+font-family: "Plus Jakarta Sans";
+font-size: 64px;
+font-style: italic;
+font-weight: 800;
+line-height: normal;
+text-transform: capitalize;
+}
+.sm_title{
+color: #050AA0;
+font-family: "Plus Jakarta Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 20px;
+text-transform: capitalize;
+&.rose{
+    color: #9700D3;
+}
+}

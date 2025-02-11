@@ -138,18 +138,23 @@
   border-radius: 20px;
   background: #FFF;
   max-width: 625px;
-  box-shadow: 0 0 90px #9f00de;
   position: relative;
   gap: 66px;
+  box-shadow: 0 0 30px rgb(149, 93, 233);
 }
 .plans_price::before {
   content: "";
   position: absolute;
-  inset: 15px;
-  background: linear-gradient(103deg, #050AA0 0%, #9700D3 100%);
+  border-radius: 20px;
+  top: 51%;
+  left: 50%;
+  width: 102%;
+  height: 100%;
+  background: linear-gradient(103deg, #050AA0 0%, #9700d3 100%);
+  filter: blur(40px);
   z-index: -1;
-  border-radius: 30px;
-  filter: blur(15px);
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
 }
 .plans_price .price_top .price_title {
   color: #252432;
@@ -200,6 +205,54 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
+}
+
+.faq .container {
+  max-width: 1217px;
+}
+.faq .faq_items {
+  gap: 46px 0;
+  margin-top: 38px;
+}
+.faq .faq_items .faq_item {
+  width: calc(50% - 34px);
+  border-radius: 15px;
+  background: #FFF;
+  padding: 31px 18px 12px 30px;
+  position: relative;
+}
+.faq .faq_items .faq_item::before {
+  content: "";
+  position: absolute;
+  border-radius: 20px;
+  top: 51%;
+  left: 50%;
+  width: 102%;
+  height: 100%;
+  background: linear-gradient(103deg, #050AA0 0%, #9700d3 100%);
+  filter: blur(40px);
+  z-index: -1;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+}
+.faq .faq_items .faq_item .faq_title {
+  color: #000;
+  font-family: "Plus Jakarta Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 100% */
+  text-transform: capitalize;
+}
+.faq .faq_items .faq_item .faq_description {
+  color: #3A3A3A;
+  text-align: justify;
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  text-transform: capitalize;
 }
 
 * {
@@ -284,4 +337,28 @@ body {
   text-transform: capitalize;
   display: inline-block;
   position: relative;
+}
+
+.section_title {
+  color: #000;
+  font-family: "Plus Jakarta Sans";
+  font-size: 64px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.sm_title {
+  color: #050AA0;
+  font-family: "Plus Jakarta Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 20px;
+  text-transform: capitalize;
+}
+.sm_title.rose {
+  color: #9700D3;
 }/*# sourceMappingURL=style.css.map */
