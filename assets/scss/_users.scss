@@ -1,0 +1,73 @@
+.users {
+    padding-top: 100px;
+    .sm_title {
+        text-align: center;
+    }
+
+    .section_title {
+        text-align: center;
+    }
+
+    .users_info {
+        width: 45%;
+        .swiper-wrapper{
+            height: 100%;
+        }
+        .user_description {
+            min-height: 180px;
+            margin-top: 21px;
+            max-width: 442px;
+            color: #3A3A3A;
+            font-family: "Plus Jakarta Sans";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            opacity: .5;
+            line-height: 28px;
+            text-transform: capitalize;
+        }
+    }
+
+    .users_title {
+        color: #000;
+        font-family: "Plus Jakarta Sans";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        text-transform: capitalize;
+    }
+
+    .user_name {
+        margin-top: 46px;
+        color: #000;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        text-transform: capitalize;
+    }
+
+    .testimonial_avatars {
+        gap: 8px;
+        margin-top: 26px;
+        position: relative;
+        top: -95px;
+        z-index: 121;
+
+        .avatar {
+            opacity: .7;
+            transform: scale(1);
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            &.active {
+                opacity: 1;
+                transform: scale(1.1);
+
+            }
+
+        }
+    }
+}

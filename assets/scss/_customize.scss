@@ -1,0 +1,26 @@
+.customize{
+background: url('../images/star_bg.png') no-repeat center;
+block-size: contain;
+padding-bottom: 154px;
+padding-top: 154px;
+.container{
+
+gap: 21px 0;
+.section_title{
+    text-align: center;
+}
+.customize_description{
+    color: #3A3A3A;
+    font-family: "Plus Jakarta Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;   
+    line-height: normal;
+    text-transform: capitalize;
+    max-width: 847px;
+}
+.custom_btn{
+    gap: 40px;
+}
+}
+}
