@@ -1,4 +1,7 @@
 .features {
+    .features_img{
+        width: 51%;
+    }
     .network_lists {
         gap: 21px;
         margin-top: 23px;
@@ -24,6 +27,25 @@
                 text-transform: capitalize;
             }
         }
-
+        .number{
+            color: #050AA0;
+            font-family: "Plus Jakarta Sans";
+            font-size: 18px;
+            font-style: italic;
+            font-weight: 800;
+            line-height: 28px;
+            text-transform: capitalize;
+        }
+    }
+    .features_btn{
+        gap: 20px;
+        margin-top: 20px;
+    }
+    &.ease{
+        .features_btn{
+            margin-right: 160px;
+            margin-top: 46px;
+            gap: 56px;
+        }
     }
 }
