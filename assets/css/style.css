@@ -66,19 +66,36 @@
   text-transform: capitalize;
   margin-bottom: 21px;
 }
+.hero_section:hover .get_btn {
+  z-index: 1212;
+  background: linear-gradient(103deg, #050AA0 0%, #9700d3 100%);
+}
+.hero_section:hover .btn_stars.first {
+  position: absolute;
+  height: auto;
+  overflow: initial;
+  left: -32px;
+  top: -22px;
+  gap: 20px;
+}
+.hero_section:hover .btn_stars.last {
+  top: -22px;
+  right: -30px;
+  gap: 20px;
+  height: auto;
+  overflow: initial;
+}
+.hero_section .btn_stars.last {
+  gap: 4px !important;
+}
+.hero_section .btn_hero {
+  gap: 6px;
+}
+.hero_section .btn_hero .arrow {
+  margin-top: 16px;
+}
 .hero_section .get_btn {
   margin-left: 11px;
-}
-.hero_section .get_btn::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: calc(100% + 10px);
-  top: 30px;
-  width: 100px;
-  height: 55px;
-  background: url(../images/btn_tail1.png) no-repeat;
-  background-size: 100%;
 }
 .hero_section .hero_images {
   display: flex;
@@ -296,6 +313,15 @@
 .users .testimonial_avatars .avatar.active {
   opacity: 1;
   transform: scale(1.1);
+}
+.users .btn_hero {
+  gap: 6px;
+  position: relative;
+  top: -40px;
+  line-height: 0;
+}
+.users .btn_hero .arrow {
+  margin-top: 16px;
 }
 
 .action .container {
@@ -621,10 +647,51 @@ body {
   font-size: 24px;
   font-style: normal;
   font-weight: 800;
-  line-height: 28px; /* 116.667% */
+  line-height: 28px;
   text-transform: capitalize;
   display: inline-block;
   position: relative;
+  transition: all 0.3s linear;
+}
+
+.btn {
+  position: relative;
+  width: fit-content;
+}
+.btn .btn_stars {
+  position: absolute;
+  left: -5px;
+  top: 4px;
+  position: absolute;
+  left: 12px;
+  top: -11px;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.2s linear;
+}
+.btn .btn_stars img {
+  position: static !important;
+  margin-top: 0 !important;
+  padding-left: 0 !important;
+}
+.btn:hover .get_btn {
+  z-index: 1212;
+  background: linear-gradient(103deg, #050AA0 0%, #9700d3 100%);
+}
+.btn:hover .btn_stars.first {
+  position: absolute;
+  height: auto;
+  overflow: initial;
+  left: -32px;
+  top: -22px;
+  gap: 20px;
+}
+.btn:hover .btn_stars.last {
+  top: -22px;
+  right: -30px;
+  gap: 20px;
+  height: auto;
+  overflow: initial;
 }
 
 .section_title {

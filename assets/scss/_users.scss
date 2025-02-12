@@ -70,4 +70,13 @@
 
         }
     }
+    .btn_hero{
+        gap: 6px;
+        position: relative;
+        top: -40px;
+        line-height: 0;
+        .arrow{
+          margin-top: 16px;
+        }
+      }
 }
