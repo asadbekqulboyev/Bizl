@@ -18,19 +18,43 @@
         line-height: normal;
         text-transform: capitalize;
     }
-    .adv_btn{
+    .advantages_btn{
         margin-top: 38px;
         padding-left: 85px;
     }
     .advantages_item{
         &:first-child{
-           .adv_btn{
+           .advantages_btn{
             max-width: 570px;
             img{
             margin-top: 25px;
             padding-right:5px ;
             }
            } 
+        }
+        &:nth-child(2){
+            .advantages_btn{
+             max-width: 570px;
+             padding-left: 180px;
+             img{
+             margin-top: 25px;
+             padding-left:85px ;
+             }
+            } 
+        }
+        &:nth-child(3){
+            .advantages_btn{
+             max-width: 570px;
+             padding-left: 180px;
+             gap: 30px;
+            img{
+                position: relative;
+                top: -28px;
+            }
+            .get_btn{
+                margin-top: 10px;
+             }
+            } 
         }
     }
 }

@@ -1,0 +1,29 @@
+.features {
+    .network_lists {
+        gap: 21px;
+        margin-top: 23px;
+    }
+
+    .network_item {
+        gap: 12px;
+        img{
+            margin-top: 2px;
+        }
+        .network_content {
+            .network_title {
+                color: #000;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 28px;
+                text-transform: capitalize;
+            }
+            p {
+                color: #3A3A3A;
+                line-height: 28px;
+                text-transform: capitalize;
+            }
+        }
+
+    }
+}
