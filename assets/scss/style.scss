@@ -86,6 +86,10 @@ body {
 .container {
     max-width: 1515px;
     margin: 0 auto;
+    padding: 0 10px;
+    @media(max-width:1200px) {
+        max-width: 992px;
+    }
 }
 
 .get_btn {
@@ -172,5 +176,12 @@ body {
 
     &.rose {
         color: #9700D3;
+    }
+}
+// main
+main{
+    padding-top: 147px;
+    @media(max-width:1400px) {
+        padding-top: 127px;
     }
 }

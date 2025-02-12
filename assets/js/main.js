@@ -1,10 +1,17 @@
 $(document).ready(function () {
     // header
-    $('.child_menu a').click(function (e) { 
-    e.preventDefault();
-    $(this).next('.submenu').slideToggle();
-    });
+    $('.hero_phone_left').css({top:'150px'})
+    $('.hero_phone_right').css({top:'150px'})
+    $('.hero_content h1').css({fontWeight:'bold'})
+    // $('.child_menu a').click(function (e) { 
+    // e.preventDefault();
+    // $(this).next('.submenu').slideToggle();
+    // });
     // rellax
+    $('.hamburger').click(function(){
+        $(this).toggleClass('active')   
+        $('.header_right').toggleClass('active')
+    })
     var rellax = new Rellax('.rellax',{
         horizontal: true, 
         vertical: false
@@ -30,16 +37,16 @@ $(document).ready(function () {
     $(".parallax.left").each(function () {
         new simpleParallax(this, {
             orientation: "left", // O‘nga harakat
-            scale: 1.5,
-            delay: 0.6,
+            scale: 1.2,
+            delay: 0.4,
             overflow: true
         });
     });
     $(".parallax.right").each(function () {
         new simpleParallax(this, {
             orientation: "right", // O‘nga harakat
-            scale: 1.5,
-            delay: 0.6,
+            scale: 1.2,
+            delay: 0.4,
             overflow: true
         });
     });

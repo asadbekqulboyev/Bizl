@@ -20,6 +20,10 @@
     line-height: 64px; /* 100% */
     text-transform: capitalize;
     margin-bottom: 2px;
+    transition: all 1s linear;
+    @media(max-width:1400px) {
+    font-size: 44px;
+    }
     }
     p{
       color: #3A3A3A;
@@ -30,8 +34,12 @@
       line-height: 33px; /* 206.25% */
       text-transform: capitalize;
       margin-bottom: 21px;
+      @media(max-width:1250px) {
+        font-weight: 700;
+        font-size: 15px;
     }
-    &:hover {
+    }
+    .btn:hover {
       .get_btn{
           z-index: 1212;
           background: linear-gradient(103deg, #050AA0 0%, #9700d3 100%);
@@ -69,13 +77,18 @@
     .hero_images{
       display: flex; 
       position: relative;
-      width: 760px;
+      width: 100%;
+      max-width: 760px;
       height: 820px;
       text-align: center;
       display: flex;
       justify-content: center;
+      @media(max-width:1400px) {
+        max-width: 660px;
+        }
       img{
         position: absolute;
+        transition: all .9s linear;
         &:first-child{
           z-index: 10;
           top: -25px;
