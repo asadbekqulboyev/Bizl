@@ -25,5 +25,22 @@ $(document).ready(function () {
         $('.avatar').removeClass('active');
         $('.avatar[data-index="' + activeIndex + '"]').addClass('active');
     });
-
+    
+    // parallax
+    $(".parallax.left").each(function () {
+        new simpleParallax(this, {
+            orientation: "left", // O‘nga harakat
+            scale: 1.5,
+            delay: 0.6,
+            overflow: true
+        });
+    });
+    $(".parallax.right").each(function () {
+        new simpleParallax(this, {
+            orientation: "right", // O‘nga harakat
+            scale: 1.5,
+            delay: 0.6,
+            overflow: true
+        });
+    });
 })
