@@ -42,7 +42,7 @@ header .header_menu {
   gap: 0 20px;
 }
 header .header_menu a {
-  padding: 10px 10px;
+  padding: 5px 10px 5px 5px;
 }
 header .header_menu .submenu {
   position: absolute;
@@ -114,9 +114,23 @@ header .header_menu a {
   display: flex;
   align-items: center;
   gap: 0 3px;
+  padding: 5px 10px 5px 5px;
+  position: relative;
+  border: 1px solid #fff;
+  transition: all 0.2s linear;
 }
-header .header_menu a:hover {
-  color: #FF0000;
+header .header_menu a:hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  padding: 2px;
+  background: linear-gradient(180deg, rgba(151, 0, 211, 0.5), rgba(5, 10, 160, 0.5));
+  -webkit-mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
+  mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
 }
 header .header .hamburger {
   display: none;
@@ -1215,7 +1229,7 @@ header .header .hamburger.active span:last-child {
 
 .ready {
   margin-top: 137px;
-  display: block;
+  display: none;
 }
 @media (max-width: 992px) {
   .ready {
@@ -1309,7 +1323,7 @@ header .header .hamburger.active span:last-child {
 }
 
 .footer {
-  padding-top: 970px;
+  padding-top: 90px;
 }
 @media (max-width: 768px) {
   .footer {
@@ -1344,6 +1358,21 @@ header .header .hamburger.active span:last-child {
   font-weight: 500;
   line-height: 26px;
   text-transform: capitalize;
+  position: relative;
+  padding: 5px;
+}
+.footer_top .footer_lists a:hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  padding: 1px;
+  background: linear-gradient(180deg, rgba(151, 0, 211, 0.5), rgba(5, 10, 160, 0.5));
+  -webkit-mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
+  mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
 }
 @media (max-width: 992px) {
   .footer_top .footer_lists {
@@ -1354,7 +1383,7 @@ header .header .hamburger.active span:last-child {
 }
 .footer_bottom {
   margin: 0 auto;
-  margin-top: 375px;
+  margin-top: 125px;
   padding: 39px;
   border-top: 1px solid rgba(22, 22, 22, 0);
   max-width: 1090px;
@@ -1569,4 +1598,8 @@ main {
   main {
     padding-top: 127px;
   }
+}
+
+.mfp-bg, .mfp-wrap {
+  z-index: 99999 !important; /* Headerdan yuqori qilish */
 }/*# sourceMappingURL=style.css.map */

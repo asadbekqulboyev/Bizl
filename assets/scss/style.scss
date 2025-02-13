@@ -204,3 +204,6 @@ main{
         padding-top: 127px;
     }
 }
+.mfp-bg, .mfp-wrap {
+    z-index: 99999 !important; /* Headerdan yuqori qilish */
+}

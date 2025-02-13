@@ -1,5 +1,5 @@
 .footer{
-padding-top: 970px;
+padding-top: 90px;
 @media (max-width:768px) {
     padding-top: 74px;
 }
@@ -29,6 +29,24 @@ padding-top: 970px;
             font-weight: 500;
             line-height: 26px;
             text-transform: capitalize;
+            position: relative;
+            padding: 5px;
+            &:hover{
+                &::before {
+                    content: "";
+                    position: absolute;
+                    inset: 0;
+                    border-radius: 8px;
+                    padding: 1px;
+                    background: linear-gradient(180deg, rgba(151, 0, 211, 0.50), rgba(5, 10, 160, 0.50));
+                    -webkit-mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
+                    mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
+                    -webkit-mask-composite: xor;
+                    mask-composite: exclude;
+                    pointer-events: none;
+                }
+            }
+            
         }
         @media (max-width:992px) {
             flex-direction: column;
@@ -39,7 +57,7 @@ padding-top: 970px;
 }
 &_bottom{
     margin: 0 auto;
-    margin-top: 375px;
+    margin-top: 125px;
     padding: 39px;
     border-top: 1px solid rgba(22, 22, 22, 0.00);
     max-width: 1090px;
