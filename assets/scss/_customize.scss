@@ -1,10 +1,13 @@
 .customize{
 background: url('../images/star_bg.png') no-repeat center;
-block-size: contain;
+background-size: contain;
 padding-bottom: 154px;
 padding-top: 154px;
+@media (max-width:992px) {
+    background: url('../images/bg_comment.png') no-repeat center;
+    padding-bottom: 112px;
+}
 .container{
-
 gap: 21px 0;
 .section_title{
     text-align: center;
@@ -18,9 +21,20 @@ gap: 21px 0;
     line-height: normal;
     text-transform: capitalize;
     max-width: 847px;
+    @media (max-width:992px) {
+        font-size: 20px;
+    }
 }
 .custom_btn{
     gap: 40px;
+    @media (max-width:992px) {
+        gap: 22px;
+    }
+    .arrow{
+        @media (max-width:992px) {
+           width:43px;
+        }
+    }
 }
 }
 }

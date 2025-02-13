@@ -5,6 +5,11 @@
     }
     &_img{
         position: relative;
+        img{
+            @media (max-width:992px) {
+                width: 100%;
+            }
+        }
     &::before {
             content: "";
             position: absolute;
@@ -23,6 +28,9 @@
         position: absolute;
         inset: 0;
         margin: auto;
+        @media (max-width:992px) {
+            width: 44px;
+        }
     }
     }
     .btn_action{

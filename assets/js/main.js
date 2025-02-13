@@ -1,12 +1,15 @@
 $(document).ready(function () {
     // header
-    $('.hero_phone_left').css({top:'150px'})
-    $('.hero_phone_right').css({top:'150px'})
-    $('.hero_content h1').css({fontWeight:'bold'})
-    // $('.child_menu a').click(function (e) { 
-    // e.preventDefault();
-    // $(this).next('.submenu').slideToggle();
-    // });
+    if(innerWidth<768){
+        $('.hero_phone_left').css({top:'0px'})
+        $('.hero_phone_right').css({top:'-24px',})
+        $('.hero_content h1').css({fontWeight:'200'})
+        $('.rellax_price').removeClass('parallax right')
+    }else{  
+        $('.hero_phone_left').css({top:'150px'})
+        $('.hero_phone_right').css({top:'150px'})
+        $('.hero_content h1').css({fontWeight:'bold'})
+    }
     // rellax
     $('.hamburger').click(function(){
         $(this).toggleClass('active')   

@@ -4,13 +4,11 @@ header{
     background: #fff;
     z-index: 2121;
 
-    .header{
-        
+    .header{ 
         display: flex;
         left: 0;top: 0;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 20px;
         &_right{
         display: flex;
         align-items: center;
@@ -148,5 +146,12 @@ header{
                 }
             }
         }
-      }
+    }
+    .header_logo{
+        img{
+          @media (max-width:768px) {
+            width: 95px;
+          }
+        }
+    }
 }

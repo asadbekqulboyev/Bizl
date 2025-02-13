@@ -1,26 +1,31 @@
 .plans {
     padding-top: 142px;
     padding-bottom: 173px;
-
+    @media (max-width:992px) {
+        padding-top: 46px;
+        padding-bottom: 82px;
+    }
     .container {
         max-width: 1371px;
-
+        @media (max-width:992px) {
+            flex-direction: column;
+            gap: 42px;
+        }
         .plans_info {
             max-width: 345px;
-
             .plans_title {
                 color: #000;
                 font-size: 60px;
                 font-style: italic;
                 font-weight: 800;
                 padding-bottom: 2px;
+                @media (max-width:992px) {
+                    font-size: 36px;
+                    text-align: center;
+                }
             }
 
-            .btn_content {
-                display: flex;
-                margin-top: 54px;
-                gap: 40px;
-            }
+            
         }
 
     }
@@ -33,6 +38,9 @@
         position: relative;
         gap: 66px;
         box-shadow: 0 0 30px rgba(149, 93, 233, 1);
+        @media (max-width:992px) {
+            gap: 28px;
+        }
         &::before {
             content: "";
             position: absolute;
@@ -46,6 +54,10 @@
             z-index: -1;
             border-radius: 20px;
             transform: translate(-50%, -50%);
+            @media (max-width:992px) {
+                width: 91%;
+                height: 96%;
+            }
         }
         .price_top {
             .price_title {
@@ -66,9 +78,15 @@
         .price_lists {
             gap: 18px 0;
             padding-left: 17px;
+            @media (max-width:992px) {
+               flex-direction: column;
+            }
             li {
                 gap:13px;
                 width: 50%;
+                @media (max-width:992px) {
+                   width: 100%;
+                 }
             }
         }
         .price_btn_lists {
@@ -100,7 +118,43 @@
                     font-weight: 400;
                     }
                 }
+                @media (max-width:992px) {
+                    width: 100%;
+                    max-width: 267px;
+                 }
             }
+            @media (max-width:992px) {
+                margin-top: 16px;
+                flex-direction: column;
+                gap: 29px;
+                justify-content: center;
+                align-items: center;
+             }
         }
     }
+    .btn_content {
+        display: flex;
+        margin-top: 54px;
+        gap: 40px;
+        @media (max-width:992px) {
+            gap: 20px;
+           .arrow{
+            width: 50px;
+            margin-top: 15px;
+           }
+        }
+    }
+    .bottoms{
+        display: none;
+        @media (max-width:992px) {
+            display: flex;
+            margin-top: 0;
+        }
+    }
+    &_info .btn_content:not(.bottoms){
+        @media (max-width:992px) {
+            display: none !important;
+        }
+    }
+    
 }
