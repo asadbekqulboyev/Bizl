@@ -1103,6 +1103,9 @@ header .header .hamburger.active span:last-child {
     margin-top: 81px;
   }
 }
+.faq .sm_title {
+  text-transform: uppercase;
+}
 @media (max-width: 768px) {
   .faq .sm_title {
     text-align: center;
@@ -1207,6 +1210,101 @@ header .header .hamburger.active span:last-child {
   .faq .faq_btn img {
     margin-top: 30px;
     width: 50px;
+  }
+}
+
+.ready {
+  margin-top: 137px;
+  display: block;
+}
+@media (max-width: 992px) {
+  .ready {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .ready {
+    margin-top: 40px;
+    display: block;
+    width: 100%;
+  }
+}
+.ready .container {
+  position: relative;
+}
+.ready .container picture {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 15px;
+}
+.ready .container picture img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 15px;
+}
+.ready .ready_info {
+  position: absolute;
+  left: 52px;
+  bottom: 128px;
+  width: 40%;
+}
+@media (max-width: 992px) {
+  .ready .ready_info {
+    bottom: 51px;
+    width: 55%;
+  }
+}
+@media (max-width: 768px) {
+  .ready .ready_info {
+    left: 0;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+.ready .ready_info .ready_title {
+  color: #fff;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+}
+@media (max-width: 992px) {
+  .ready .ready_info .ready_title {
+    font-size: 30px;
+  }
+}
+.ready .ready_info .ready_description {
+  margin-top: 16px;
+  color: #FFF;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 33px;
+  text-transform: capitalize;
+}
+.ready .ready_info .ready_btn {
+  color: #000;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 28px;
+  text-transform: capitalize;
+  border-radius: 4px;
+  background: #FFF;
+  padding: 12px 35px;
+  display: block;
+  width: fit-content;
+  margin-top: 8px;
+}
+@media (max-width: 768px) {
+  .ready .ready_info .ready_btn {
+    margin: 10px auto 0;
   }
 }
 
