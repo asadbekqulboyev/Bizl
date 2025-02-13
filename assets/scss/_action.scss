@@ -77,6 +77,12 @@
         .container{
             @media (max-width:768px) {
                 flex-direction: column;;
+                gap: 45px;
+            }
+            .action_img{
+                @media (max-width:768px) {
+                    margin-top: 10px;
+                }
             }
             .sm_title{
                 @media (max-width:768px) {
@@ -88,6 +94,29 @@
                 text-align: center;
                 }
             }
+        }
+        .desctop_btn{
+            @media (max-width:768px) {
+                display: none;                
+            }  
+        }
+        .mobile_btn{
+            display: none;
+            @media (max-width:768px) {
+                display: flex;    
+                justify-content: center;        
+                margin-top: 0;
+                gap: 18px;
+                .arrow{
+                    width: 20px;
+                    margin-top: 35px;
+                }    
+            }
+        }
+        &_img {
+           @media (max-width:768px) {
+            margin-top: 10px;
+           }
         }
     }
 }

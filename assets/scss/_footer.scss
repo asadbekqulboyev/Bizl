@@ -1,5 +1,8 @@
 .footer{
 padding-top: 970px;
+@media (max-width:768px) {
+    padding-top: 74px;
+}
 &_top{
     max-width: 615px;
     margin: 0 auto;
@@ -30,6 +33,7 @@ padding-top: 970px;
         @media (max-width:992px) {
             flex-direction: column;
             align-items: center;
+            gap: 69px;
         }
     }
 }
@@ -48,6 +52,9 @@ padding-top: 970px;
         width: 100%;
         height: 1px; 
         background: linear-gradient(to right, rgba(22, 22, 22, 0), #696969, rgba(22, 22, 22, 0));
+    }
+    @media (max-width:768px) {
+        margin-top: 104px;
     }
 }
 }
