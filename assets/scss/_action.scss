@@ -1,16 +1,18 @@
-.action{
-    .container{
+.action {
+    .container {
         max-width: 1214px;
-        
     }
-    &_img{
+
+    &_img {
         position: relative;
-        img{
+
+        img {
             @media (max-width:992px) {
                 width: 100%;
             }
         }
-    &::before {
+
+        &::before {
             content: "";
             position: absolute;
             border-radius: 20px;
@@ -23,33 +25,69 @@
             z-index: -1;
             border-radius: 20px;
             transform: translate(-50%, -50%);
-    }
-    .play_img{
-        position: absolute;
-        inset: 0;
-        margin: auto;
-        @media (max-width:992px) {
-            width: 44px;
+        }
+
+        .play_img {
+            position: absolute;
+            inset: 0;
+            margin: auto;
+
+            @media (max-width:992px) {
+                width: 44px;
+            }
         }
     }
-    }
-    .btn_action{
+
+    .btn_action {
         margin-top: 21px;
         gap: 19px;
-        img{
+
+        img.arrow {
             margin-top: 20px;
         }
     }
-    &.desctop{
-        .sm_title{
+
+    &.desctop {
+        .sm_title {
             text-align: center;
         }
-        .action_img{
+        .action_img {
             margin-top: 40px;
+
+            @media (max-width:992px) {
+                margin-top: 62px;
+            }
         }
-        .bt_content{
+
+        .bt_content {
             margin-top: 58px;
             gap: 17px;
+
+            @media (max-width:992px) {
+                margin-top: 55px;
+                gap: 16px;
+
+                img {
+                    width: 25px;
+                }
+            }
+        }
+    }
+    &.mobile{
+        .container{
+            @media (max-width:768px) {
+                flex-direction: column;;
+            }
+            .sm_title{
+                @media (max-width:768px) {
+                text-align: center;
+                }
+            }
+            .section_title{
+                @media (max-width:768px) {
+                text-align: center;
+                }
+            }
         }
     }
 }

@@ -27,6 +27,10 @@ padding-top: 970px;
             line-height: 26px;
             text-transform: capitalize;
         }
+        @media (max-width:992px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
 &_bottom{

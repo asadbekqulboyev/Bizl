@@ -1,15 +1,29 @@
 .users {
     padding-top: 100px;
+    .users_content{
+        @media (max-width:992px) {
+            flex-direction: column;
+        }
+        .users_img{
+            img{
+                @media (max-width:1250px) {
+                    width: 100%;
+                 }
+            }
+        }
+    }
     .sm_title {
         text-align: center;
     }
-
     .section_title {
         text-align: center;
     }
 
     .users_info {
         width: 45%;
+        @media (max-width:992px) {
+         width: 100%;
+        }
         .swiper-wrapper{
             height: 100%;
         }
@@ -25,6 +39,10 @@
             opacity: .5;
             line-height: 28px;
             text-transform: capitalize;
+            @media (max-width:992px) {
+                font-size: 16px;
+                margin-top: 3px;
+            }
         }
     }
 
@@ -36,6 +54,9 @@
         font-weight: 600;
         line-height: 28px;
         text-transform: capitalize;
+        @media (max-width:992px) {
+          font-size: 20px;
+         }
     }
 
     .user_name {
@@ -54,7 +75,9 @@
         position: relative;
         top: -95px;
         z-index: 121;
-
+        // @media (max-width:992px) {
+        //     margin-top: 10px;
+        // }
         .avatar {
             opacity: .7;
             transform: scale(1);
@@ -75,8 +98,16 @@
         position: relative;
         top: -40px;
         line-height: 0;
+        @media (max-width:992px) {
+            justify-content: center;
+            gap: 8px;
+            top: -30px;
+        }
         .arrow{
           margin-top: 16px;
+          @media (max-width:992px) {
+            width: 50px;
+            }
         }
       }
 }

@@ -5,6 +5,8 @@ $(document).ready(function () {
         $('.hero_phone_right').css({top:'-24px',})
         $('.hero_content h1').css({fontWeight:'200'})
         $('.rellax_price').removeClass('parallax right')
+        $('.action_info ').removeClass('parallax right')
+        $('.action_img  ').removeClass('parallax right')
     }else{  
         $('.hero_phone_left').css({top:'150px'})
         $('.hero_phone_right').css({top:'150px'})
