@@ -226,7 +226,7 @@ header .header .hamburger.active span:last-child {
 }
 @media (max-width: 1200px) {
   .hero_section h1 {
-    font-size: 34px;
+    font-size: 30px;
     line-height: normal;
   }
 }

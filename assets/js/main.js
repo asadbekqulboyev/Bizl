@@ -1,5 +1,21 @@
 $(document).ready(function () {
     // header
+    // $('.action_img').magnificPopup({
+    //     type: 'iframe',
+    //     iframe: {
+    //         patterns: {
+    //             youtube: {
+    //                 index: 'youtube.com/', 
+    //                 id: function(url) {
+    //                     var match = url.match(/[\\?\\&]v=([^\\?\\&]+)/);
+    //                     return match && match[1] ? match[1] : null;
+    //                 },
+    //                 src: 'https://www.youtube.com/embed/%id%?autoplay=1' 
+    //             }
+    //         }
+    //     }
+        
+    // })
     $('.action_img').magnificPopup({
         type: 'iframe',
         iframe: {
@@ -7,19 +23,21 @@ $(document).ready(function () {
                 youtube: {
                     index: 'youtube.com/', 
                     id: function(url) {
-                        var match = url.match(/[\\?\\&]v=([^\\?\\&]+)/);
-                        return match && match[1] ? match[1] : null;
+                        var match = url.match(/[\\?\\&]v=([^\\?\\&]+)/); // Oddiy YouTube videolar
+                        if (match && match[1]) return match[1];
+    
+                        var shortsMatch = url.match(/youtube\.com\/shorts\/([a-zA-Z0-9_-]+)/); // Shorts videolar
+                        return shortsMatch ? shortsMatch[1] : null;
                     },
-                    src: 'https://www.youtube.com/embed/%id%?autoplay=1' 
+                    src: 'https://www.youtube.com/embed/%id%?autoplay=1'
                 }
             }
         }
-        
-    })
+    });
     if(innerWidth<768){
         $('.hero_phone_left').css({top:'0px'})
         $('.hero_phone_right').css({top:'-24px',})
-        $('.hero_content h1').css({fontWeight:'200'})
+        $('.hero_content h1').css({fontWeight:'bold'})
         $('.rellax_price').removeClass('parallax right')
         $('.action_info ').removeClass('parallax right')
         $('.action_img  ').removeClass('parallax right')
