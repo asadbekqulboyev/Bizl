@@ -1,21 +1,5 @@
 $(document).ready(function () {
-    // header
-    // $('.action_img').magnificPopup({
-    //     type: 'iframe',
-    //     iframe: {
-    //         patterns: {
-    //             youtube: {
-    //                 index: 'youtube.com/', 
-    //                 id: function(url) {
-    //                     var match = url.match(/[\\?\\&]v=([^\\?\\&]+)/);
-    //                     return match && match[1] ? match[1] : null;
-    //                 },
-    //                 src: 'https://www.youtube.com/embed/%id%?autoplay=1' 
-    //             }
-    //         }
-    //     }
-        
-    // })
+   
     $('.action_img').magnificPopup({
         type: 'iframe',
         iframe: {
@@ -29,11 +13,13 @@ $(document).ready(function () {
                         var shortsMatch = url.match(/youtube\.com\/shorts\/([a-zA-Z0-9_-]+)/); // Shorts videolar
                         return shortsMatch ? shortsMatch[1] : null;
                     },
-                    src: 'https://www.youtube.com/embed/%id%?autoplay=1'
+                    src: 'https://www.youtube.com/embed/%id%?autoplay=1&mute=1&playsinline=1'
                 }
             }
         }
     });
+
+    
     if(innerWidth<768){
         $('.hero_phone_left').css({top:'0px'})
         $('.hero_phone_right').css({top:'-24px',})
