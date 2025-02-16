@@ -21,7 +21,7 @@ header .header_right {
   header .header_right {
     position: absolute;
     right: -110%;
-    top: 55px;
+    top: 52px;
     width: 100%;
     background: #fff;
     height: 100vh;
@@ -1333,6 +1333,11 @@ header .header .hamburger.active span:last-child {
 .footer_top {
   max-width: 615px;
   margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .footer_top .foter_logo img {
+    width: 270px;
+  }
 }
 .footer_top .footer_lists {
   width: 100%;

@@ -6,6 +6,13 @@ padding-top: 90px;
 &_top{
     max-width: 615px;
     margin: 0 auto;
+    .foter_logo{
+        img{
+            @media (max-width:768px) {
+                width: 270px;
+            }
+        }
+    }
     .footer_lists{
         width: 100%;
         ul{
