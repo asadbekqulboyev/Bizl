@@ -498,6 +498,11 @@ header .header .hamburger.active span:last-child {
 .features.ease .features_img img {
   width: 840px;
 }
+@media (max-width: 992px) {
+  .features.ease .features_img img {
+    width: 100%;
+  }
+}
 .features.ease .features_btn {
   margin-right: 160px;
   margin-top: 46px;

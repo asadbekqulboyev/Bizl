@@ -104,6 +104,9 @@
         .features_img{
             img{
                 width: 840px;
+                @media (max-width:992px) {
+                    width: 100%;
+                }
             }
         }
         .features_btn {
