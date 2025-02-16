@@ -6,7 +6,7 @@
         padding-bottom: 82px;
     }
     .container {
-        max-width: 1371px;
+        max-width: 1271px;
         @media (max-width:992px) {
             flex-direction: column;
             gap: 42px;
@@ -129,6 +129,7 @@
                 gap: 29px;
                 justify-content: center;
                 align-items: center;
+                margin-left: -10px;
              }
         }
     }

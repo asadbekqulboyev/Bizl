@@ -485,10 +485,18 @@ header .header .hamburger.active span:last-child {
     width: 14px;
   }
 }
+.features.ease .container {
+  max-width: 1400px;
+  padding: 0 20px;
+}
 @media (max-width: 992px) {
   .features.ease .container {
+    padding: 0 20px;
     flex-direction: column-reverse;
   }
+}
+.features.ease .features_img img {
+  width: 840px;
 }
 .features.ease .features_btn {
   margin-right: 160px;
@@ -508,6 +516,14 @@ header .header .hamburger.active span:last-child {
   }
 }
 
+.advantages .container {
+  padding: 0 20px;
+}
+@media (max-width: 992px) {
+  .advantages .container {
+    padding: 0 10px;
+  }
+}
 @media (max-width: 992px) {
   .advantages .sm_title {
     text-align: center;
@@ -887,6 +903,9 @@ header .header .hamburger.active span:last-child {
     width: 25px;
   }
 }
+.action.mobile .container {
+  max-width: 1060px;
+}
 @media (max-width: 768px) {
   .action.mobile .container {
     flex-direction: column;
@@ -945,7 +964,7 @@ header .header .hamburger.active span:last-child {
   }
 }
 .plans .container {
-  max-width: 1371px;
+  max-width: 1271px;
 }
 @media (max-width: 992px) {
   .plans .container {
@@ -1076,6 +1095,7 @@ header .header .hamburger.active span:last-child {
     gap: 29px;
     justify-content: center;
     align-items: center;
+    margin-left: -10px;
   }
 }
 .plans .btn_content {
@@ -1346,6 +1366,12 @@ header .header .hamburger.active span:last-child {
   margin-top: 16px;
   gap: 16px;
 }
+@media (max-width: 992px) {
+  .footer_top .footer_lists ul {
+    align-items: center;
+    justify-content: center !important;
+  }
+}
 .footer_top .footer_lists .link_title {
   color: #000;
   text-align: center;
@@ -1383,7 +1409,9 @@ header .header .hamburger.active span:last-child {
   .footer_top .footer_lists {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 69px;
+    justify-content: center !important;
   }
 }
 .footer_bottom {
