@@ -27,16 +27,22 @@ $(document).ready(function () {
         $('.rellax_price').removeClass('parallax right')
         $('.action_info ').removeClass('parallax right')
         $('.action_img  ').removeClass('parallax right')
+       
     }else{  
         $('.hero_phone_left').css({top:'150px'})
         $('.hero_phone_right').css({top:'150px'})
         $('.hero_content h1').css({fontWeight:'bold'})
+        $('.child_menu').click(function(e){
+            e.stopPropagation()
+            $(this).toggleClass('active')
+        })
     }
     // rellax
     $('.hamburger').click(function(){
         $(this).toggleClass('active')   
         $('.header_right').toggleClass('active')
     })
+
     // users section
     var swiper = new Swiper('.testimonial_slider', {
         loop: false,

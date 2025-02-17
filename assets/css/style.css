@@ -78,6 +78,9 @@ header .header_menu .child_menu {
     align-items: center;
     justify-content: center;
   }
+  header .header_menu .child_menu .none_mobile {
+    display: none;
+  }
   header .header_menu .child_menu ul {
     display: flex;
     flex-direction: column;
@@ -93,10 +96,10 @@ header .header_menu .child_menu img {
     display: none;
   }
 }
-header .header_menu .child_menu:hover img {
+header .header_menu .child_menu.active img {
   transform: rotate(-180deg);
 }
-header .header_menu .child_menu:hover .submenu {
+header .header_menu .child_menu.active .submenu {
   overflow-y: initial;
   opacity: 1;
   height: max-content;
@@ -1236,10 +1239,12 @@ header .header .hamburger.active span:last-child {
 .faq .faq_btn {
   margin-top: 56px;
   gap: 37px;
+  margin-right: 145px;
 }
 @media (max-width: 768px) {
   .faq .faq_btn {
     gap: 15px;
+    margin-right: 0;
   }
 }
 .faq .faq_btn img {
