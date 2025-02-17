@@ -523,6 +523,11 @@ header .header .hamburger.active span:last-child {
     margin-left: auto;
   }
 }
+@media (max-width: 768px) {
+  .features.ease .features_btn {
+    margin-right: 73px;
+  }
+}
 
 .advantages .container {
   padding: 0 20px;
@@ -1244,7 +1249,7 @@ header .header .hamburger.active span:last-child {
 @media (max-width: 768px) {
   .faq .faq_btn {
     gap: 15px;
-    margin-right: 0;
+    margin-right: 70px;
   }
 }
 .faq .faq_btn img {

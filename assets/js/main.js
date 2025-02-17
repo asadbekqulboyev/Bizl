@@ -36,6 +36,22 @@ $(document).ready(function () {
             e.stopPropagation()
             $(this).toggleClass('active')
         })
+        $(".parallax.left").each(function () {
+            new simpleParallax(this, {
+                orientation: "left", // O‘nga harakat
+                scale: 1.2,
+                delay: 0.4,
+                overflow: true
+            });
+        });
+        $(".parallax.right").each(function () {
+            new simpleParallax(this, {
+                orientation: "right", // O‘nga harakat
+                scale: 1.2,
+                delay: 0.4,
+                overflow: true
+            });
+        });
     }
     // rellax
     $('.hamburger').click(function(){
@@ -60,20 +76,5 @@ $(document).ready(function () {
         $('.avatar[data-index="' + activeIndex + '"]').addClass('active');
     });
     // parallax
-    $(".parallax.left").each(function () {
-        new simpleParallax(this, {
-            orientation: "left", // O‘nga harakat
-            scale: 1.2,
-            delay: 0.4,
-            overflow: true
-        });
-    });
-    $(".parallax.right").each(function () {
-        new simpleParallax(this, {
-            orientation: "right", // O‘nga harakat
-            scale: 1.2,
-            delay: 0.4,
-            overflow: true
-        });
-    });
+   
 })

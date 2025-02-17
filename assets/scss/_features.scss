@@ -123,6 +123,9 @@
                 margin-right: auto;
                 margin-left: auto;
             }
+            @media (max-width:768px) {
+                margin-right: 73px;
+            }
         }
     }
 }
